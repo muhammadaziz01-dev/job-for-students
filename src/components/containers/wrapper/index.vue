@@ -1,13 +1,13 @@
 <template>
-  <div>
-   <router-view></router-view>
-  </div>
+    <div>
+
+    </div>
 </template>
 
 <script setup lang="ts">
 
 </script>
 
-<style scoped>
+<style scoped lang="scss" src="./style.scss">
 
 </style>
