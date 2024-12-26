@@ -8,6 +8,6 @@
 
 </script>
 
-<style scoped lang="scss" src="./style.scss">
+<style scoped lang="scss" >
 
 </style>
