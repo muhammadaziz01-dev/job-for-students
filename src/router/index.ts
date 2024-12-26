@@ -1,11 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { Error , Chat, Login , Dashbord , Students , Events , Settings } from  "../views";
+import { Error , Chat, Login , Dashbord , Students , Events , Settings , ProfileComplete} from  "../views";
 import {AdminLayout} from '../layout';
 const routes= [
   {
     path: '/',
     name: 'Login',
     component: Login,
+  },
+  {
+     path:'/profile-complete',
+     name: 'ProfileComplete',
+     component: ProfileComplete,
   },
   {
     path: '/dashbord',

@@ -1,0 +1,14 @@
+.profile-complete {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, #808EDA 0%, #EDE4DC 100%);
+
+    &--parent {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}

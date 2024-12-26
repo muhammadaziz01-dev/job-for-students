@@ -3,7 +3,7 @@
     <h3>JFS - Oliygoh moduli</h3>
     <p>Talabalarning ishga joylashuvini kuzatib borish va ko’maklashish</p>
     <label for="login" class="form--label">
-      <input type="text" placeholder="Login" v-model="user.login" />
+      <input type="text" placeholder="Login" v-model="user.login" required />
       <img :src="User" alt="User icon" />
     </label>
     <label for="login" class="form--label">
@@ -11,6 +11,7 @@
         :type="isOpen ? 'password' : 'text'"
         placeholder="Parol"
         v-model="user.password"
+        required
       />
       <img @click="toggleOpen" :src="isOpen ? Open : Clos" alt=" icon" />
     </label>
@@ -20,22 +21,19 @@
 
 <script setup lang="ts">
 import { ref, reactive } from "vue";
+import {useRouter} from "vue-router"
 import { toast } from "vue3-toastify";
+import {type LoginUserData} from "../../../types"
 import User from "../../../assets/icons/user.svg";
 import Open from "../../../assets/icons/open.svg";
 import Clos from "../../../assets/icons/clos.svg";
 
 const isOpen = ref(true);
+const router = useRouter()
 const toggleOpen = (): void => {
   isOpen.value = !isOpen.value;
 };
-
-interface UserData {
-  login: string;
-  password: string;
-}
-
-const user: UserData = reactive({
+const user: LoginUserData = reactive({
   login: "",
   password: "",
 });
@@ -46,6 +44,9 @@ const handelSubmitted = (): void => {
     console.log("User login  : " + user.login  + " " +"User password" + user.password )
     user.login = "";
     user.password = "";
+    setTimeout(():void=>{
+        router.push('/profile-complete') 
+    },1500)
     
   } else {
     toast.error("Please fill in both fields!");
