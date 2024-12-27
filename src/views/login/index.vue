@@ -32,7 +32,7 @@ const isLoader = ref<boolean>(true);
 
 setTimeout((): void => {
   isLoader.value = false;
-}, 3000);
+}, 1500);
 </script>
 
 <style scoped lang="scss" src="./style.scss"></style>
