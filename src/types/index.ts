@@ -19,3 +19,9 @@ export interface Contact{
   webSite: string,
   telegram: string,
 }
+
+export interface IsidebarItems {
+   title: string;
+   icon: string;
+   to:string;
+}
