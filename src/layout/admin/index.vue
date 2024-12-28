@@ -1,14 +1,14 @@
 <template>
+  <div>
+     <Aside/>
     <div>
-     <h1>Admin layout</h1>
-     <router-view></router-view>
+      <router-view></router-view>
     </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-
+import {Aside} from '../../components'
 </script>
 
-<style scoped lang="scss" src="./style.scss">
-
-</style>
+<style scoped lang="scss" src="./style.scss"></style>
