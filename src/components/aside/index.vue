@@ -1,7 +1,7 @@
 <template>
   <aside class="aside">
     <div class="aside--top">
-      <div class="aside--top--profil">
+      <div class="aside--top--profil" @click="profile">
         <div class="aside--top--profil--icon">
         <img :src="ProfiLogo" alt="Profi logo" class="aside--top--profil--icon--img"  />
         </div>
@@ -35,6 +35,10 @@ const router = useRouter();
 
 const logout = ():void => {
     router.push("/");
+}
+
+const profile = ():void => {
+    router.push("/profile");
 }
 </script>
 

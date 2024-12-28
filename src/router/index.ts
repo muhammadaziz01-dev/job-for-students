@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { Error , Chat, Login , Dashbord , Students , Events , Settings , ProfileComplete} from  "../views";
+import { Error , Chat, Login , Dashbord , Students , Events , Settings , ProfileComplete , Profile} from  "../views";
 import {AdminLayout} from '../layout';
 const routes= [
   {
@@ -41,6 +41,11 @@ const routes= [
         path: '/settings',
         name: 'Settings',
         component: Settings,
+      },
+      {
+        path: '/profile',
+        name: 'Profile',
+        component: Profile,
       }
 
     ]

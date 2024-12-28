@@ -6,5 +6,6 @@ import Settings from './proferans/index.vue';
 import Students from './students/index.vue';
 import Chat from './chat/index.vue';
 import ProfileComplete from './profile-complete/index.vue';
+import Profile from './profile/index.vue';
 
-export { Login, Dashbord , Error, Events, Settings, Students , Chat , ProfileComplete}  
+export { Login, Dashbord , Error, Events, Settings, Students , Chat , ProfileComplete , Profile}  
