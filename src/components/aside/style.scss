@@ -78,10 +78,19 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 20px;
+                span svg path {
+                    fill: none;
+                    transition: fill 0.4s ease; /* Silliq o'tish */
+                  }
 
                 &:hover {
                     background: #EFE9FF;
-                    // color: #6425FE;
+                    color: #6425FE;
+
+                    span svg path {
+                        fill: #6425FE;
+                      }
+                    
 
                 }
 
@@ -91,6 +100,16 @@
             .router-link-exact-active {
                 background: #EFE9FF;
                 color: #6425FE;
+
+                span{
+                    svg{
+
+                        path{
+                            fill: #6425FE;
+                            stroke: #6425FE;
+                        }
+                    }
+                }
             }
 
 
