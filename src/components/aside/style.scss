@@ -85,12 +85,7 @@
 
                 &:hover {
                     background: #EFE9FF;
-                    color: #6425FE;
-
-                    span svg path {
-                        fill: #6425FE;
-                      }
-                    
+                    color: #6425FE; 
 
                 }
 
@@ -100,16 +95,6 @@
             .router-link-exact-active {
                 background: #EFE9FF;
                 color: #6425FE;
-
-                span{
-                    svg{
-
-                        path{
-                            fill: #6425FE;
-                            stroke: #6425FE;
-                        }
-                    }
-                }
             }
 
 
@@ -137,7 +122,7 @@
 
         &:hover {
             background: #EFE9FF;
-            // color: #6425FE;
+            color: #6425FE;
         }
 
     }
