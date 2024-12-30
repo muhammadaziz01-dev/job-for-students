@@ -3,13 +3,13 @@ import LoginForm from './form/login-form.vue'
 import ProfileCompleteForm1 from './form/p-c-form1.vue'
 import ProfileCompleteForm2 from './form/p-c-form2.vue'
 import ProfileCompleteForm3 from './form/p-c-form3.vue'
-import Card from './card/index.vue'
+import StudentStatus from './card/student-status.vue'
 import Table from './table/index.vue'
 import Chart from './chart/index.vue'
 
 export {
   Loader,
-  Card,
+  StudentStatus,
   Table,
   Chart,
   LoginForm,
