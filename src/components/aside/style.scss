@@ -1,6 +1,6 @@
 .aside {
     width: 300px;
-    height: 100vh;
+    min-height: 100vh;
     padding: 50px 24px 30px;
     display: flex;
     flex-direction: column;
@@ -45,6 +45,7 @@
                     display: flex;
                     align-items: center;
                     gap: 10px;
+                    margin: 0;
                 }
 
                 p {
@@ -54,6 +55,7 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: 20px;
+                    margin: 0;
                 }
             }
         }
@@ -81,6 +83,10 @@
                 span svg path {
                     fill: none;
                     transition: fill 0.4s ease; /* Silliq o'tish */
+                  }
+
+                  p{
+                    margin: 0;
                   }
 
                 &:hover {
