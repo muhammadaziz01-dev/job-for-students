@@ -8,12 +8,12 @@
 
     th,
     td {
-        padding: 19.5px 30px;
+        padding: 12px 30px;
         text-align: left;
     }
 
     thead {
-        padding: 0 30px;
+        
 
         th {
             background-color: transparent;
@@ -52,9 +52,7 @@
             background-color: #e0e7ff;
         }
 
-        .status {
-            color: green;
-        }
+        
 
         .chat-btn {
             display: flex;

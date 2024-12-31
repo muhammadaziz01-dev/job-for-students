@@ -25,3 +25,11 @@ export interface IsidebarItems {
    icon: string;
    to:string;
 }
+
+export interface Istudents{
+  id: number,
+    name: string,
+    course: number ,
+    jobStatus:string,
+    color: string,
+}
