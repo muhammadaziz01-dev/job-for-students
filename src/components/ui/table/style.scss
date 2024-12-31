@@ -70,11 +70,11 @@
             font-weight: 400;
             letter-spacing: -0.14px;
             border: none;
-            transition: all 1s linear;
+            transition: all .5s linear;
             cursor: pointer;
 
             &:hover {
-                background-color: #0253aa;
+                background-color: #6425FE;
             }
 
             .chat-icon {

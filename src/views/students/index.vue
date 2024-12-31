@@ -2,6 +2,7 @@
     <section class="student--wrapper">
       <StudentStatus/>
       <div class="student--wrapper--parent">
+      <TabelFilter/>
        <Table :data="students" />
       </div>
     </section>
@@ -9,7 +10,7 @@
 
 <script setup lang="ts">
 import { reactive } from 'vue'
-import {StudentStatus , Table} from "../../components/ui"
+import {StudentStatus , Table , TabelFilter} from "../../components/ui"
 import {type Istudents} from "../../types"
 
 const students:Istudents[] = reactive([
