@@ -8,6 +8,7 @@ import Table from './table/index.vue';
 import Chart from './chart/index.vue';
 import TabelFilter from "./tabl-filter/index.vue";
 import Paginaton from "./pagination/index.vue";
+import DarkModToggle from './dark-mod-toggle/index.vue';
 
 export {
   Loader,
@@ -20,4 +21,5 @@ export {
   ProfileCompleteForm3,
   TabelFilter,
   Paginaton,
+  DarkModToggle,
 }
