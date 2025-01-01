@@ -2,4 +2,12 @@
     display: flex;
     align-items: start;
     background: #EDE9F5;
+    transition: .3s;
+}
+
+.layout--wrapper-dark{
+    display: flex;
+    align-items: start;
+    transition: .3s;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, #5456BC 0%, #243D84 40%, #000E1E 99.98%);
 }

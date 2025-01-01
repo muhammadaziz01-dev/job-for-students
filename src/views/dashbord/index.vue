@@ -1,12 +1,12 @@
 <template>
-    <div>
-<h1>Dashbors</h1>
-<DarkModToggle/>
-    </div>
+    <section id="dashbord-section">
+     <Header />
+
+    </section>
 </template>
 
 <script setup lang="ts">
-import {DarkModToggle } from "@/components/ui"
+import {Header} from "@/components"
 </script>
 
 <style scoped lang="scss" src="./style.scss">

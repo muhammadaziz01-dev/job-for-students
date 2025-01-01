@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <input type="checkbox" id="darkmod-toggle" />
+  <div class="darkmod-toggle-wrapper">
+    <input type="checkbox" id="darkmod-toggle" @change="isDarkmood"  />
     <label for="darkmod-toggle">
       <svg
         class="sun"
@@ -38,6 +38,13 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import {useDarkmoodStore } from '@/stores';
+
+const stores = useDarkmoodStore();
+
+const {isDarkmood} = stores;
+
+</script>
 
 <style scoped src="./style.scss" lang="scss"></style>
