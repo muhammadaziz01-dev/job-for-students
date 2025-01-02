@@ -1,0 +1,17 @@
+.lang-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    background: #FFF;
+
+    &--btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}

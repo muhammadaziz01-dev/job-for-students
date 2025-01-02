@@ -1,0 +1,32 @@
+/* Pagination style updetet */
+
+.ant-pagination-item-link {
+    border-radius: 4px !important;
+    background: #ede9f5 !important;
+}
+
+.ant-pagination-item {
+    border-radius: 4px !important;
+    background: #ede9f5 !important;
+    color: var(--black, #444655) !important;
+    font-family: Poppins !important;
+    font-size: 12px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    margin-inline-end: 15px !important;
+
+}
+
+.ant-pagination-item-active {
+    border: 1px solid #5932ea !important;
+    background: #6425fe !important;
+
+}
+
+.ant-pagination-item-active a {
+    color: #FFF !important;
+}
+
+.ant-pagination .ant-pagination-prev {
+    margin-inline-end: 15px !important;
+}

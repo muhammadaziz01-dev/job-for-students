@@ -9,6 +9,8 @@ import Chart from './chart/index.vue';
 import TabelFilter from "./tabl-filter/index.vue";
 import Paginaton from "./pagination/index.vue";
 import DarkModToggle from './dark-mod-toggle/index.vue';
+import Lang from "./lang/index.vue";
+import Notification from "./notification/index.vue";
 
 export {
   Loader,
@@ -22,4 +24,6 @@ export {
   TabelFilter,
   Paginaton,
   DarkModToggle,
+  Lang,
+  Notification,
 }

@@ -6,3 +6,7 @@
 import { ref } from "vue";
 const current = ref(2);
 </script>
+<style  lang="scss" src="./style.scss">
+
+
+</style>

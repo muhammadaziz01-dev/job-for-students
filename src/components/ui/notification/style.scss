@@ -1,0 +1,19 @@
+.notification-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 30px;
+    height: 30px;
+
+    &--status {
+        width: 10px;
+        height: 9px;
+        background-color: #B79BFF;
+        border-radius: 50%;
+        border: 2px solid #EDE9F5;
+        position: absolute;
+        top: 2.5px;
+        right: 6px;
+    }
+}

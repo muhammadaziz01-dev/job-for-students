@@ -10,13 +10,15 @@
        <img src="../../assets/icons/search.svg" alt="search icon" class="header--menu--search--icon">
       </div>
       <DarkModToggle/>
+      <Lang/>
+      <Notification/>
     </div>
   </header>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { DarkModToggle } from "@/components/ui";
+import { DarkModToggle, Lang , Notification} from "@/components/ui";
 
 const currentDate = ref(new Date());
 
