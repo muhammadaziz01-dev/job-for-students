@@ -1,5 +1,8 @@
 
 import {type IsidebarItems} from '../types'
+import Avatar1 from "@/assets/icons/avatr1.svg";
+import Avatar2 from "@/assets/icons/avatr2.svg";
+
 
 export const sidebarItems :IsidebarItems[] = [{
     title: "Dashbord",
@@ -43,6 +46,65 @@ export const sidebarItems :IsidebarItems[] = [{
     <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>`,
     to: "/settings"
+  }
+
+]
+
+export const chatStudentList = [
+  {
+    id: 1,
+    name: "Alisher Valiyev",
+    lastMessag: "Suhbat qalay o’tdi?",
+    avatar: Avatar1,
+    lastMessageTimestamp: "15:25",
+    unread: true,
+    unreadCount: 0,
+    online: true,
+    isWriting: true,
+  },
+  {
+    id: 2,
+    name: "Fikri Khan",
+    lastMessag: "Sizga yaxshi xabar yuborildi?",
+    avatar: Avatar2,
+    lastMessageTimestamp: "14:40",
+    unread: true,
+    unreadCount: 2,
+    online: false,
+    isWriting: false,
+  },
+  {
+    id: 3,
+    name: "Ximena Abdullayeva",
+    lastMessag: "Salom, menimizga yaxshi xabar yuborildi?",
+    avatar: Avatar1,
+    lastMessageTimestamp: "13:55",
+    unread: false,
+    unreadCount: 0,
+    online: false,
+    isWriting: false,
+  },
+  {
+    id: 4,
+    name: "Ruslan Temirbekov",
+    lastMessag: "Salom, sizga yaxshi xabar yuborildi?",
+    avatar: Avatar2,
+    lastMessageTimestamp: "12:30",
+    unread: true,
+    unreadCount: 1,
+    online: false,
+    isWriting: false,
+  },
+  {
+    id: 5,
+    name: "Naim Khan",
+    lastMessag: "Salom, sizga yaxshi xabar yuborildi?",
+    avatar: Avatar1,
+    lastMessageTimestamp: "11:15",
+    unread: false,
+    unreadCount: 0,
+    online: false,
+    isWriting: false,
   }
 
 ]

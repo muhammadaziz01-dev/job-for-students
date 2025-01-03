@@ -41,25 +41,25 @@ const routes = [
         component: Chat,
         children: [
           {
-            path: '/chat/students',
+            path: 'students',
             name: 'ChatStudents',
             component: ChatStudents,
             children: [
               {
-                path: '/chat/students/:id',
-                name: 'ChatId',
+                path: ':id',
+                name: 'ChatStudentId',
                 component: ChatId,
               },
             ],
           },
           {
-            path: '/chat/companias',
+            path: 'companias',
             name: 'ChatCompanias',
             component: ChatCompanias,
             children: [
               {
-                path: '/chat/companias/:id',
-                name: 'ChatId',
+                path: ':id',
+                name: 'ChatCompaniaId',
                 component: ChatId,
               },
             ],
