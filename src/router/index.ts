@@ -1,16 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { Error , Chat, Login , Dashbord , Students , Events , Settings , ProfileComplete , Profile} from  "../views";
-import {AdminLayout} from '../layout';
-const routes= [
+import {
+  Error,
+  Chat,
+  ChatCompanias,
+  ChatStudents,
+  ChatId,
+  Login,
+  Dashbord,
+  Students,
+  Events,
+  Settings,
+  ProfileComplete,
+  Profile,
+} from '../views'
+import { AdminLayout } from '../layout'
+const routes = [
   {
     path: '/',
     name: 'Login',
     component: Login,
   },
   {
-     path:'/profile-complete',
-     name: 'ProfileComplete',
-     component: ProfileComplete,
+    path: '/profile-complete',
+    name: 'ProfileComplete',
+    component: ProfileComplete,
   },
   {
     path: '/dashbord',
@@ -23,9 +36,35 @@ const routes= [
         component: Dashbord,
       },
       {
-        path:'/chat',
+        path: '/chat',
         name: 'Chat',
         component: Chat,
+        children: [
+          {
+            path: '/chat/students',
+            name: 'ChatStudents',
+            component: ChatStudents,
+            children: [
+              {
+                path: '/chat/students/:id',
+                name: 'ChatId',
+                component: ChatId,
+              },
+            ],
+          },
+          {
+            path: '/chat/companias',
+            name: 'ChatCompanias',
+            component: ChatCompanias,
+            children: [
+              {
+                path: '/chat/companias/:id',
+                name: 'ChatId',
+                component: ChatId,
+              },
+            ],
+          },
+        ],
       },
       {
         path: '/students',
@@ -46,12 +85,11 @@ const routes= [
         path: '/profile',
         name: 'Profile',
         component: Profile,
-      }
-
-    ]
+      },
+    ],
   },
   {
-    path: '/:pathMatch(.*)*', 
+    path: '/:pathMatch(.*)*',
     name: 'Error',
     component: Error,
   },

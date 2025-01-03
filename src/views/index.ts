@@ -7,5 +7,9 @@ import Students from './students/index.vue';
 import Chat from './chat/index.vue';
 import ProfileComplete from './profile-complete/index.vue';
 import Profile from './profile/index.vue';
+import ChatId from "./chat/chat-id/index.vue";
+import ChatStudents from "./chat/students/index.vue";
+import ChatCompanias from "./chat/companias/index.vue";
 
-export { Login, Dashbord , Error, Events, Settings, Students , Chat , ProfileComplete , Profile}  
+
+export { Login, Dashbord , Error, Events, Settings, Students , Chat, ChatId, ChatCompanias , ChatStudents , ProfileComplete , Profile}
