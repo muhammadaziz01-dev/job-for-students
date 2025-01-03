@@ -6,7 +6,8 @@
 </template>
 
 <script setup lang="ts">
-
+import flagUzbekistan from '../../../assets/icons/uzbekistan.svg';
+import flagUsa from '../../../assets/icons/usa.svg';
 </script>
 
 <style scoped lang="scss" src="./style.scss">
