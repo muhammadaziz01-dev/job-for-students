@@ -4,7 +4,7 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
-const current = ref(2);
+const current = ref(1);
 </script>
 <style  lang="scss" src="./style.scss">
 

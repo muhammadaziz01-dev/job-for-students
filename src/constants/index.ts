@@ -61,6 +61,7 @@ export const chatStudentList = [
     unreadCount: 0,
     online: true,
     isWriting: true,
+    lastActivity: `15:40`,
   },
   {
     id: 2,
@@ -72,6 +73,7 @@ export const chatStudentList = [
     unreadCount: 2,
     online: false,
     isWriting: false,
+    lastActivity: `14:50`,
   },
   {
     id: 3,
@@ -83,6 +85,7 @@ export const chatStudentList = [
     unreadCount: 0,
     online: false,
     isWriting: false,
+    lastActivity: `13:58`,
   },
   {
     id: 4,
@@ -94,6 +97,7 @@ export const chatStudentList = [
     unreadCount: 1,
     online: false,
     isWriting: false,
+    lastActivity: `12:35`,
   },
   {
     id: 5,
@@ -105,6 +109,7 @@ export const chatStudentList = [
     unreadCount: 0,
     online: false,
     isWriting: false,
+    lastActivity: `11:20`,
   }
 
 ]
