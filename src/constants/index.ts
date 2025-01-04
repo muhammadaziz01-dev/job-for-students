@@ -2,6 +2,14 @@
 import {type IsidebarItems} from '../types'
 import Avatar1 from "@/assets/icons/avatr1.svg";
 import Avatar2 from "@/assets/icons/avatr2.svg";
+import Avatar3 from "@/assets/icons/avatr3.svg";
+
+import AvatarComp0 from "@/assets/icons/avatrComp0.svg";
+import AvatarComp1 from "@/assets/icons/avatrComp1.svg";
+import AvatarComp2 from "@/assets/icons/avatrComp2.svg";
+import AvatarComp3 from "@/assets/icons/avatrComp3.svg";
+
+
 
 
 export const sidebarItems :IsidebarItems[] = [{
@@ -60,8 +68,14 @@ export const chatStudentList = [
     unread: true,
     unreadCount: 0,
     online: true,
-    isWriting: true,
     lastActivity: `15:40`,
+    isTyping: true,
+    icon1: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6.66454 10.1145L12.7925 3.98584L13.7359 4.92851L6.66454 11.9998L2.42188 7.75717L3.36454 6.81451L6.66454 10.1145Z" fill="currentColor"/>
+            </svg>`,
+    icons2: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M7.73597 9.17317L8.6773 10.1145L14.3213 4.47051L15.264 5.41317L8.6773 11.9998L4.43464 7.75717L5.3773 6.81451L6.79397 8.23117L7.73597 9.17251V9.17317ZM7.7373 7.28784L11.0386 3.98584L11.9786 4.92584L8.6773 8.22784L7.7373 7.28784ZM5.85264 11.0578L4.91064 11.9998L0.667969 7.75717L1.61064 6.81451L2.55264 7.75651L2.55197 7.75717L5.85264 11.0578Z" fill="currentColor"/>
+          </svg>`
   },
   {
     id: 2,
@@ -72,20 +86,32 @@ export const chatStudentList = [
     unread: true,
     unreadCount: 2,
     online: false,
-    isWriting: false,
+    isTyping: false,
     lastActivity: `14:50`,
+    icon1: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6.66454 10.1145L12.7925 3.98584L13.7359 4.92851L6.66454 11.9998L2.42188 7.75717L3.36454 6.81451L6.66454 10.1145Z" fill="currentColor"/>
+            </svg>`,
+    icons2: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+               <path d="M7.73597 9.17317L8.6773 10.1145L14.3213 4.47051L15.264 5.41317L8.6773 11.9998L4.43464 7.75717L5.3773 6.81451L6.79397 8.23117L7.73597 9.17251V9.17317ZM7.7373 7.28784L11.0386 3.98584L11.9786 4.92584L8.6773 8.22784L7.7373 7.28784ZM5.85264 11.0578L4.91064 11.9998L0.667969 7.75717L1.61064 6.81451L2.55264 7.75651L2.55197 7.75717L5.85264 11.0578Z" fill="currentColor"/>
+             </svg>`
   },
   {
     id: 3,
     name: "Ximena Abdullayeva",
     lastMessag: "Salom, menimizga yaxshi xabar yuborildi?",
-    avatar: Avatar1,
+    avatar: Avatar3,
     lastMessageTimestamp: "13:55",
     unread: false,
     unreadCount: 0,
     online: false,
-    isWriting: false,
+    isTyping: false,
     lastActivity: `13:58`,
+    icon1: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6.66454 10.1145L12.7925 3.98584L13.7359 4.92851L6.66454 11.9998L2.42188 7.75717L3.36454 6.81451L6.66454 10.1145Z" fill="currentColor"/>
+            </svg>`,
+    icons2: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M7.73597 9.17317L8.6773 10.1145L14.3213 4.47051L15.264 5.41317L8.6773 11.9998L4.43464 7.75717L5.3773 6.81451L6.79397 8.23117L7.73597 9.17251V9.17317ZM7.7373 7.28784L11.0386 3.98584L11.9786 4.92584L8.6773 8.22784L7.7373 7.28784ZM5.85264 11.0578L4.91064 11.9998L0.667969 7.75717L1.61064 6.81451L2.55264 7.75651L2.55197 7.75717L5.85264 11.0578Z" fill="currentColor"/>
+          </svg>`
   },
   {
     id: 4,
@@ -96,8 +122,14 @@ export const chatStudentList = [
     unread: true,
     unreadCount: 1,
     online: false,
-    isWriting: false,
+    isTyping: false,
     lastActivity: `12:35`,
+    icon1: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6.66454 10.1145L12.7925 3.98584L13.7359 4.92851L6.66454 11.9998L2.42188 7.75717L3.36454 6.81451L6.66454 10.1145Z" fill="currentColor"/>
+            </svg>`,
+    icons2: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M7.73597 9.17317L8.6773 10.1145L14.3213 4.47051L15.264 5.41317L8.6773 11.9998L4.43464 7.75717L5.3773 6.81451L6.79397 8.23117L7.73597 9.17251V9.17317ZM7.7373 7.28784L11.0386 3.98584L11.9786 4.92584L8.6773 8.22784L7.7373 7.28784ZM5.85264 11.0578L4.91064 11.9998L0.667969 7.75717L1.61064 6.81451L2.55264 7.75651L2.55197 7.75717L5.85264 11.0578Z" fill="currentColor"/>
+          </svg>`
   },
   {
     id: 5,
@@ -108,8 +140,90 @@ export const chatStudentList = [
     unread: false,
     unreadCount: 0,
     online: false,
-    isWriting: false,
+    isTyping: false,
     lastActivity: `11:20`,
+    icon1: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6.66454 10.1145L12.7925 3.98584L13.7359 4.92851L6.66454 11.9998L2.42188 7.75717L3.36454 6.81451L6.66454 10.1145Z" fill="currentColor"/>
+            </svg>`,
+    icons2: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M7.73597 9.17317L8.6773 10.1145L14.3213 4.47051L15.264 5.41317L8.6773 11.9998L4.43464 7.75717L5.3773 6.81451L6.79397 8.23117L7.73597 9.17251V9.17317ZM7.7373 7.28784L11.0386 3.98584L11.9786 4.92584L8.6773 8.22784L7.7373 7.28784ZM5.85264 11.0578L4.91064 11.9998L0.667969 7.75717L1.61064 6.81451L2.55264 7.75651L2.55197 7.75717L5.85264 11.0578Z" fill="currentColor"/>
+          </svg>`
   }
+
+]
+
+export const chatcompaniaList = [
+  {
+    id: 1,
+    name: "Progress Solution",
+    lastMessag: "Nomzod ma’qul bo’ldimi?",
+    avatar: AvatarComp0,
+    lastMessageTimestamp: "16:45",
+    unread: false,
+    unreadCount: 0,
+    online: false,
+    lastActivity: `17:00`,
+    isTyping: false,
+    icon1: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6.66454 10.1145L12.7925 3.98584L13.7359 4.92851L6.66454 11.9998L2.42188 7.75717L3.36454 6.81451L6.66454 10.1145Z" fill="currentColor"/>
+            </svg>`,
+    icons2: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M7.73597 9.17317L8.6773 10.1145L14.3213 4.47051L15.264 5.41317L8.6773 11.9998L4.43464 7.75717L5.3773 6.81451L6.79397 8.23117L7.73597 9.17251V9.17317ZM7.7373 7.28784L11.0386 3.98584L11.9786 4.92584L8.6773 8.22784L7.7373 7.28784ZM5.85264 11.0578L4.91064 11.9998L0.667969 7.75717L1.61064 6.81451L2.55264 7.75651L2.55197 7.75717L5.85264 11.0578Z" fill="currentColor"/>
+          </svg>`
+  },
+  {
+    id: 2,
+    name: "UIC Group",
+    lastMessag: "Hamkorlikdan hursandmiz!",
+    avatar: AvatarComp1,
+    lastMessageTimestamp: "14:40",
+    unread: true,
+    unreadCount: 2,
+    online: true,
+    isTyping: false,
+    lastActivity: `14:50`,
+    icon1: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6.66454 10.1145L12.7925 3.98584L13.7359 4.92851L6.66454 11.9998L2.42188 7.75717L3.36454 6.81451L6.66454 10.1145Z" fill="currentColor"/>
+            </svg>`,
+    icons2: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+               <path d="M7.73597 9.17317L8.6773 10.1145L14.3213 4.47051L15.264 5.41317L8.6773 11.9998L4.43464 7.75717L5.3773 6.81451L6.79397 8.23117L7.73597 9.17251V9.17317ZM7.7373 7.28784L11.0386 3.98584L11.9786 4.92584L8.6773 8.22784L7.7373 7.28784ZM5.85264 11.0578L4.91064 11.9998L0.667969 7.75717L1.61064 6.81451L2.55264 7.75651L2.55197 7.75717L5.85264 11.0578Z" fill="currentColor"/>
+             </svg>`
+  },
+  {
+    id: 3,
+    name: "UzAuto Corporation",
+    lastMessag: "Sizlarga katta rahmat!",
+    avatar: AvatarComp2,
+    lastMessageTimestamp: "16:45",
+    unread: false,
+    unreadCount: 7,
+    online: true,
+    isTyping: false,
+    lastActivity: `13:58`,
+    icon1: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6.66454 10.1145L12.7925 3.98584L13.7359 4.92851L6.66454 11.9998L2.42188 7.75717L3.36454 6.81451L6.66454 10.1145Z" fill="currentColor"/>
+            </svg>`,
+    icons2: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M7.73597 9.17317L8.6773 10.1145L14.3213 4.47051L15.264 5.41317L8.6773 11.9998L4.43464 7.75717L5.3773 6.81451L6.79397 8.23117L7.73597 9.17251V9.17317ZM7.7373 7.28784L11.0386 3.98584L11.9786 4.92584L8.6773 8.22784L7.7373 7.28784ZM5.85264 11.0578L4.91064 11.9998L0.667969 7.75717L1.61064 6.81451L2.55264 7.75651L2.55197 7.75717L5.85264 11.0578Z" fill="currentColor"/>
+          </svg>`
+  },
+  {
+    id: 4,
+    name: "Mastercard",
+    lastMessag: "Thaks sir🤩",
+    avatar: AvatarComp3,
+    lastMessageTimestamp: "12:30",
+    unread: true,
+    unreadCount: 0,
+    online: false,
+    isTyping: false,
+    lastActivity: `12:35`,
+    icon1: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6.66454 10.1145L12.7925 3.98584L13.7359 4.92851L6.66454 11.9998L2.42188 7.75717L3.36454 6.81451L6.66454 10.1145Z" fill="currentColor"/>
+            </svg>`,
+    icons2: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M7.73597 9.17317L8.6773 10.1145L14.3213 4.47051L15.264 5.41317L8.6773 11.9998L4.43464 7.75717L5.3773 6.81451L6.79397 8.23117L7.73597 9.17251V9.17317ZM7.7373 7.28784L11.0386 3.98584L11.9786 4.92584L8.6773 8.22784L7.7373 7.28784ZM5.85264 11.0578L4.91064 11.9998L0.667969 7.75717L1.61064 6.81451L2.55264 7.75651L2.55197 7.75717L5.85264 11.0578Z" fill="currentColor"/>
+          </svg>`
+  },
 
 ]
