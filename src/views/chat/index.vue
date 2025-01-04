@@ -16,7 +16,11 @@
           >
         </div>
         <div class="chat-parent--left--menu--search">
-          <input type="text" placeholder="Qidirish" class="chat-parent--left--menu--search--input" />
+          <input
+            type="text"
+            placeholder="Qidirish"
+            class="chat-parent--left--menu--search--input"
+          />
           <img
             src="../../assets/icons/search.svg"
             alt="search icon"
@@ -28,11 +32,13 @@
     </div>
 
     <div class="chat-parent--right">
-      <!-- <router-view></router-view> -->
+      <ChatId />
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ChatId from "./chat-id/index.vue";
+</script>
 
 <style scoped lang="scss" src="./style.scss"></style>
