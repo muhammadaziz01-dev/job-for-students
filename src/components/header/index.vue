@@ -9,16 +9,14 @@
         <input type="text" placeholder="Qidirish" class="header--menu--search--input" >
        <img src="../../assets/icons/search.svg" alt="search icon" class="header--menu--search--icon">
       </div>
-      <DarkModToggle/>
-      <Lang/>
-      <Notification/>
+     <MiniHeader/>
     </div>
   </header>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { DarkModToggle, Lang , Notification} from "@/components/ui";
+import MiniHeader from "@/components/header/min-header.vue"
 
 const currentDate = ref(new Date());
 
