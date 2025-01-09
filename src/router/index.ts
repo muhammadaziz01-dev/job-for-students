@@ -13,6 +13,7 @@ import {
   ProfileComplete,
   Profile,
   Posts,
+  Vacancy,
 } from '../views'
 import { AdminLayout } from '../layout'
 const routes = [
@@ -81,6 +82,11 @@ const routes = [
         path: '/posts',
         name: 'Posts',
         component: Posts,
+      },
+      {
+        path: '/vacancy',
+        name: 'Vacancy',
+        component: Vacancy,
       },
       {
         path: '/profile',
