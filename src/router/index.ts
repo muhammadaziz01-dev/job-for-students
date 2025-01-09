@@ -12,6 +12,7 @@ import {
   Settings,
   ProfileComplete,
   Profile,
+  Posts,
 } from '../views'
 import { AdminLayout } from '../layout'
 const routes = [
@@ -77,14 +78,19 @@ const routes = [
         component: Events,
       },
       {
-        path: '/settings',
-        name: 'Settings',
-        component: Settings,
+        path: '/posts',
+        name: 'Posts',
+        component: Posts,
       },
       {
         path: '/profile',
         name: 'Profile',
         component: Profile,
+      },
+      {
+        path: '/settings',
+        name: 'Settings',
+        component: Settings,
       },
     ],
   },

@@ -48,15 +48,20 @@ export const sidebarItems :IsidebarItems[] = [{
     to: "/events"
   },
   {
-    title: "Sozlamalar",
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <path d="M3 9.10986V14.8799C3 16.9999 3 16.9999 5 18.3499L10.5 21.5299C11.33 22.0099 12.68 22.0099 13.5 21.5299L19 18.3499C21 16.9999 21 16.9999 21 14.8899V9.10986C21 6.99986 21 6.99986 19 5.64986L13.5 2.46986C12.68 1.98986 11.33 1.98986 10.5 2.46986L5 5.64986C3 6.99986 3 6.99986 3 9.10986Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>`,
-    to: "/settings"
+    title: "Postlar",
+    icon: ` <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M21.6602 10.44L20.6802 14.62C19.8402 18.23 18.1802 19.69 15.0602 19.39C14.5602 19.35 14.0202 19.26 13.4402 19.12L11.7602 18.72C7.59018 17.73 6.30018 15.67 7.28018 11.49L8.26018 7.30001C8.46018 6.45001 8.70018 5.71001 9.00018 5.10001C10.1702 2.68001 12.1602 2.03001 15.5002 2.82001L17.1702 3.21001C21.3602 4.19001 22.6402 6.26001 21.6602 10.44Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15.0584 19.3901C14.4384 19.8101 13.6584 20.1601 12.7084 20.4701L11.1284 20.9901C7.15839 22.2701 5.06839 21.2001 3.77839 17.2301L2.49839 13.2801C1.21839 9.3101 2.27839 7.2101 6.24839 5.9301L7.82839 5.4101C8.23839 5.2801 8.62839 5.1701 8.99839 5.1001C8.69839 5.7101 8.45839 6.4501 8.25839 7.3001L7.27839 11.4901C6.29839 15.6701 7.58839 17.7301 11.7584 18.7201L13.4384 19.1201C14.0184 19.2601 14.5584 19.3501 15.0584 19.3901Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12.6406 8.52979L17.4906 9.75979" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+             <path d="M11.6602 12.3999L14.5602 13.1399" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+    `,
+    to: "/posts"
   }
 
 ]
+
+
 
 export const chatStudentList = [
   {
