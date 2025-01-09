@@ -94,7 +94,7 @@ const router = useRouter();
 
 .ant-modal-content {
   padding: 30px 60px !important;
-  der-radius: 10px !important;
+  border-radius: 10px !important;
   box-shadow: none !important;
 }
 
