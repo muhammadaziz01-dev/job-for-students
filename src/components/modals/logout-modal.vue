@@ -20,13 +20,26 @@
       <span> Chiqish</span>
     </button>
 
-    <a-modal v-model:open="open" >
+    <a-modal v-model:open="open">
+    <div class="modal--wrapper">
+      <img :src="DengerIcon" alt="icon">
+    <div class="modal--wrapper--title">
+        <strong>Chiqishni tasdiqlaysizmi?</strong>
+        <p>Hisobingizdan chiqish uchun tasdiqlang. Chiqishdan oldin ma'lumotlaringizni saqlashni unutmang!</p>
+    </div>
+    <div class="modal--wrapper--footer">
+      <button @click="handleOk" class="modal--wrapper--footer--clos">Qolish</button>
+      <button @click="router.push(`/`)" class="modal--wrapper--footer--ok">Chiqish</button>
 
-    </a-modal>
+    </div>
+    </div>
+   </a-modal>
   </div>
 </template>
 <script lang="ts" setup>
 import { ref } from "vue";
+import {useRouter} from "vue-router";
+import DengerIcon from "@/assets/icons/danger.svg"
 const open = ref<boolean>(false);
 
 const showModal = () => {
@@ -37,45 +50,116 @@ const handleOk = (e: MouseEvent) => {
   console.log(e);
   open.value = false;
 };
+
+const router = useRouter();
+
 </script>
 
-<style  lang="scss">
+<style lang="scss">
 .logout--btn {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        width: 252px;
-        cursor: pointer;
-        padding: 12px 20px;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        border-radius: 10px;
-        transition: all 0.4s ease;
-        color: #84828A;
-        font-family: Poppins;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px;
-        background-color: transparent;
-        border:none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 252px;
+  cursor: pointer;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  color: #84828a;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: transparent;
+  border: none;
 
-        &:hover {
-            background: #EFE9FF;
-            color: #6425FE;
-        }
-
+  &:hover {
+    background: #efe9ff;
+    color: #6425fe;
+  }
 }
 
-.ant-modal-wrap{
+.ant-modal-wrap {
   background: rgba(0, 0, 0, 0.25) !important;
 }
 
 .ant-modal-footer,
-.ant-modal-close,
-.ant-modal-body{
-  display:none !important;
+.ant-modal-close {
+  display: none !important;
+}
 
+.ant-modal-content {
+  padding: 30px 60px !important;
+  der-radius: 10px !important;
+  box-shadow: none !important;
+}
+
+.modal--wrapper{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 30px;
+
+  &--title{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    text-align: center;
+
+    strong{
+      color: #444655;
+      font-size: 28px ;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+    p{
+      color: #444655;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+
+  &--footer{
+    display: flex;
+    gap: 16px;
+
+    button{
+      border:none;
+      width: 203px;
+      height: 70px;
+      display:flex;
+      align-items:center;
+      justify-content: center;
+      border-radius: 15px;
+      cursor:pointer;
+      font-size: 18px;
+      font-weight: 500;
+      transition:  0.5s  ;
+    }
+
+    &--clos{
+      background: #EFE9FF;
+      color: #6425FE;
+
+      &:hover{
+        background: #D6D2FF;
+      }
+    }
+
+    &--ok{
+      background: #C1A8FF;
+      color: #FFFFFF;
+
+      &:hover{
+        background: #ac8eff;
+      }
+    }
+  }
 }
 </style>
