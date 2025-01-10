@@ -17,7 +17,11 @@
           <img src="../../../assets/icons/more.svg" alt="ison" />
         </button>
 
-        <div class="chatid-parent--header--card--menu" v-if="toggleMenu" data-aos="flip-up">
+        <div
+          class="chatid-parent--header--card--menu"
+          v-if="toggleMenu"
+          data-aos="flip-up"
+        >
           <button @click="isMenu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +61,59 @@
       </div>
     </div>
     <div class="chatid-parent--body">
-      <!-- Your chat messages here -->
+      <div class="chatid-parent--body--content">
+        <!-- Chat messages rendered -->
+      </div>
+      <div class="chatid-parent--body--input-wraper">
+        <div class="chatid-parent--body--input-wraper--input-parent">
+          <button class="chatid-parent--body--input-wraper--input-parent--btn-left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M10.2734 10.1249L8.2151 12.1833C7.07344 13.3249 7.07344 15.1666 8.2151 16.3083C9.35677 17.4499 11.1984 17.4499 12.3401 16.3083L15.5818 13.0666C17.8568 10.7916 17.8568 7.0916 15.5818 4.8166C13.3068 2.5416 9.60677 2.5416 7.33177 4.8166L3.79844 8.34994C1.84844 10.2999 1.84844 13.4666 3.79844 15.4249"
+                stroke="#84828A"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <input
+            type="text"
+            placeholder="Xabar yozish"
+            class="chatid-parent--body--input-wraper--input-parent--input"
+          />
+          <button class="chatid-parent--body--input-wraper--input-parent--btn-right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M7.92668 3.52487L15.06 7.09153C18.26 8.69154 18.26 11.3082 15.06 12.9082L7.92668 16.4749C3.12668 18.8749 1.16835 16.9082 3.56835 12.1165L4.29335 10.6749C4.47668 10.3082 4.47668 9.69987 4.29335 9.3332L3.56835 7.8832C1.16835 3.09153 3.13502 1.12487 7.92668 3.52487Z"
+                stroke="#84828A"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M4.53516 10H9.03516"
+                stroke="#84828A"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </template>

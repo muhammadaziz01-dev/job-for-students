@@ -113,5 +113,64 @@
     &--body {
         width: 100%;
         min-height: calc(100vh - 87px);
+        position: relative;
+
+        &--content {
+            width: 100%;
+            height: 100%;
+        }
+
+        &--input-wraper {
+            position: absolute;
+            bottom: 25px;
+            left: 25px;
+            width: calc(100% - 50px);
+            height: 50px;
+            z-index: 10;
+
+            &--input-parent {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                border-radius: 15px;
+                background: #EFE9FF;
+
+                &--input {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                    background-color: transparent;
+                    outline: none;
+                    border: none;
+                    padding: 10px 35px 10px 48px;
+                    color: #84828A;
+                    font-size: 14px;
+                    font-style: normal;
+                }
+
+                &--btn-left ,
+                &--btn-right {
+                    position: absolute;
+                    top: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    background-color: transparent;
+                    border: none;
+                    transition: all 0.3s ease;
+                }
+
+                &--btn-left {
+                    left: 11px;
+                    transform: translateY(-50%);
+                }
+
+                &--btn-right {
+                    right: 15px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
     }
 }
