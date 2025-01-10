@@ -165,6 +165,24 @@ export const chatStudentList = [
     icons2: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M7.73597 9.17317L8.6773 10.1145L14.3213 4.47051L15.264 5.41317L8.6773 11.9998L4.43464 7.75717L5.3773 6.81451L6.79397 8.23117L7.73597 9.17251V9.17317ZM7.7373 7.28784L11.0386 3.98584L11.9786 4.92584L8.6773 8.22784L7.7373 7.28784ZM5.85264 11.0578L4.91064 11.9998L0.667969 7.75717L1.61064 6.81451L2.55264 7.75651L2.55197 7.75717L5.85264 11.0578Z" fill="currentColor"/>
           </svg>`
+  },
+  {
+    id: 6,
+    name: "Fikri Khan",
+    lastMessag: "Sizga yaxshi xabar yuborildi?",
+    avatar: Avatar2,
+    lastMessageTimestamp: "14:40",
+    unread: true,
+    unreadCount: 0,
+    online: false,
+    isTyping: false,
+    lastActivity: `14:50`,
+    icon1: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6.66454 10.1145L12.7925 3.98584L13.7359 4.92851L6.66454 11.9998L2.42188 7.75717L3.36454 6.81451L6.66454 10.1145Z" fill="currentColor"/>
+            </svg>`,
+    icons2: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+               <path d="M7.73597 9.17317L8.6773 10.1145L14.3213 4.47051L15.264 5.41317L8.6773 11.9998L4.43464 7.75717L5.3773 6.81451L6.79397 8.23117L7.73597 9.17251V9.17317ZM7.7373 7.28784L11.0386 3.98584L11.9786 4.92584L8.6773 8.22784L7.7373 7.28784ZM5.85264 11.0578L4.91064 11.9998L0.667969 7.75717L1.61064 6.81451L2.55264 7.75651L2.55197 7.75717L5.85264 11.0578Z" fill="currentColor"/>
+             </svg>`
   }
 
 ]
