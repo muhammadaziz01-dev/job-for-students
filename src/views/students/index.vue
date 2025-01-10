@@ -1,5 +1,9 @@
 <template>
     <section class="student--wrapper">
+      <div class="student--wrapper--top">
+      <h1>Talabalar</h1>
+      <MinniHeader/>
+      </div>
       <StudentStatus/>
       <div class="student--wrapper--parent">
       <TabelFilter/>
@@ -11,7 +15,8 @@
 
 <script setup lang="ts">
 import { reactive } from 'vue'
-import {StudentStatus , Table , TabelFilter , Paginaton} from "../../components/ui"
+import {StudentStatus , Table , TabelFilter , Paginaton} from "../../components/ui";
+import MinniHeader from "../../components/header/min-header.vue";
 import {type Istudents} from "../../types"
 
 const students:Istudents[] = reactive([
