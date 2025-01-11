@@ -46,3 +46,18 @@ export interface IDashStatusCardData {
   decrease: number;
   icon: string;
 }
+
+export interface IChatCompaniaData {
+  id: number;
+  name: string;
+  lastMessag: string;
+  avatar: string;
+  lastMessageTimestamp: string;
+  unread: boolean;
+  unreadCount: number;
+  online: boolean;
+  isTyping: boolean;
+  lastActivity: string;
+  icon1: string;
+  icon2: string;
+}
