@@ -1,4 +1,4 @@
-import { type IsidebarItems } from '../types'
+import { type IsidebarItems ,type IDashStatusCardData } from '../types'
 import Avatar1 from '@/assets/icons/avatr1.svg'
 import Avatar2 from '@/assets/icons/avatr2.svg'
 import Avatar3 from '@/assets/icons/avatr3.svg'
@@ -259,7 +259,7 @@ export const chatcompaniaList = [
 ]
 
 // Dashbord status card data
-export const dashStatusCardData = [
+export const dashStatusCardData:IDashStatusCardData[] = [
   {
     id: 1,
     title: 'Jami talabalar',

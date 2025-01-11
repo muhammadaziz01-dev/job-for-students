@@ -33,3 +33,16 @@ export interface Istudents{
     jobStatus:string,
     color: string,
 }
+
+
+export interface IDashStatusCardData {
+  id:number;
+  title: string;
+  description:string;
+  count: number;
+  color: string;
+  backgroundColor: string;
+  increase: number;
+  decrease: number;
+  icon: string;
+}
