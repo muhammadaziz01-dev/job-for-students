@@ -11,6 +11,7 @@ import Paginaton from "./pagination/index.vue";
 import DarkModToggle from './dark-mod-toggle/index.vue';
 import Lang from "./lang/index.vue";
 import Notification from "./notification/index.vue";
+import StatusCardDashbord from "./card/status-card.vue";
 
 export {
   Loader,
@@ -26,4 +27,5 @@ export {
   DarkModToggle,
   Lang,
   Notification,
+  StatusCardDashbord,
 }

@@ -47,7 +47,6 @@ const showModal = () => {
 };
 
 const handleOk = (e: MouseEvent) => {
-  console.log(e);
   open.value = false;
 };
 
