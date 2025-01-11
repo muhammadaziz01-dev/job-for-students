@@ -95,6 +95,7 @@ const router = useRouter();
   padding: 30px 60px !important;
   border-radius: 10px !important;
   box-shadow: none !important;
+  transform: translateY(30%) !important;
 }
 
 .modal--wrapper{
