@@ -8,7 +8,9 @@
           </div>
        </div>
        <div class="dashboard-content--right">
-         <DashbordComponiCard />
+         <DashbordComponiCard :data="dataComponiCardData" />
+         <DashbordComponiCard :data="dataComponiCardData2" />
+
        </div>
      </div>
 
@@ -18,7 +20,7 @@
 <script setup lang="ts">
 import {Header} from "@/components"
 import {StatusCardDashbord , DashbordComponiCard} from "@/components/ui";
-import {dashStatusCardData} from "@/constants"
+import {dashStatusCardData , dataComponiCardData , dataComponiCardData2} from "@/constants"
 </script>
 
 <style scoped lang="scss" src="./style.scss">

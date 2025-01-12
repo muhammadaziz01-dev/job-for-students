@@ -1,10 +1,10 @@
 <template>
   <div class="componi-card">
-    <h2 class="componi-card--title">{{ data?.title }}</h2>
+    <h2 class="componi-card--title">{{ props?.data?.title }}</h2>
 
     <div class="componi-card--list">
       <div
-        v-for="(el , index) in data?.data"
+        v-for="(el , index) in props?.data?.data"
         :key="el?.id"
         :class=" index + 1 !== props?.data?.data.length ? `componi-card--list--itim itim-border ` : `componi-card--list--itim`"
       >
@@ -19,7 +19,7 @@
     </div>
 
     <div class="componi-card--footer">
-      <p class="componi-card--footer--title">{{ data?.btnTitle }}</p>
+      <p class="componi-card--footer--title">{{ props?.data?.btnTitle }}</p>
       <button class="componi-card--footer--btn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -52,13 +52,13 @@ const props = defineProps({
     default: {
       title: "Ish beruvchilar (142)",
       btnTitle: "Barchasini ko’rish",
+      url: "/dashbord/componi-list",
       data: [
         {
           id: 1,
           name: "Progress Solution",
           count: 25,
           increaseCount: 3,
-          url: "/dashbord/componi-list",
           icon: `<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                     <path d="M17.6377 31.0137C18.3912 31.0137 19.002 30.4029 19.002 29.6494C19.002 28.8959 18.3912 28.2852 17.6377 28.2852C16.8843 28.2852 16.2734 28.8959 16.2734 29.6494C16.2734 30.4029 16.8843 31.0137 17.6377 31.0137Z" fill="#0079FE"/>
                     <path d="M21.3291 28.6602C22.0825 28.6602 22.6934 28.0493 22.6934 27.2959C22.6934 26.5424 22.0825 25.9316 21.3291 25.9316C20.5756 25.9316 19.9648 26.5424 19.9648 27.2959C19.9648 28.0493 20.5756 28.6602 21.3291 28.6602Z" fill="#0079FE"/>
@@ -85,6 +85,8 @@ const props = defineProps({
     },
   },
 });
+
+console.log(props)
 </script>
 
 <style scoped lang="scss">
