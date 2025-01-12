@@ -40,7 +40,7 @@ import { chatcompaniaList } from "../../../constants";
         </div>
         <span
           v-else
-          v-html="el?.unread ? el?.icons2 : el?.icon1"
+          v-html="el?.unread ? el?.icon2 : el?.icon1"
           class="companiaList-list--itim--time--unread"
         ></span>
       </div>

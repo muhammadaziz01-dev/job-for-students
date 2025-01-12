@@ -30,7 +30,7 @@ import { chatStudentList } from "../../../constants";
         <div class="studentList-list--itim--time--unreadCount" v-if=" el?.unreadCount >= 1">
          {{ el?.unreadCount }}
         </div>
-        <span v-else v-html="el?.unread ? el?.icons2 : el?.icon1" class="studentList-list--itim--time--unread"></span>
+        <span v-else v-html="el?.unread ? el?.icon2 : el?.icon1" class="studentList-list--itim--time--unread"></span>
       </div>
     </router-link>
   </div>
