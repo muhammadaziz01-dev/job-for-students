@@ -61,3 +61,17 @@ export interface IChatCompaniaData {
   icon1: string;
   icon2: string;
 }
+
+interface IdataComponiCardDataData {
+  id: number;
+  name: string;
+  count:number;
+  increaseCount: number;
+  icon: string;
+}
+export interface IdataComponiCardData {
+  title:string;
+  btnTitle:string;
+  url:string;
+  data:IdataComponiCardDataData[];
+}
