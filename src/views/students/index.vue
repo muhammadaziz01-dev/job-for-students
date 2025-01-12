@@ -4,7 +4,7 @@
       <h1>Talabalar</h1>
       <MinniHeader/>
       </div>
-      <StudentStatus/>
+      <StudentStatus :data="dataStudentStatus"/>
       <div class="student--wrapper--parent">
       <TabelFilter/>
        <Table :data="students" />
@@ -15,9 +15,12 @@
 
 <script setup lang="ts">
 import { reactive } from 'vue'
-import {StudentStatus , Table , TabelFilter , Paginaton} from "../../components/ui";
-import MinniHeader from "../../components/header/min-header.vue";
-import {type Istudents} from "../../types"
+import {StudentStatus , Table , TabelFilter , Paginaton} from "@/components/ui";
+import MinniHeader from "@/components/header/min-header.vue";
+import {type Istudents} from "@/types";
+import { dataStudentStatus} from "@/constants";
+
+
 
 const students:Istudents[] = reactive([
   {
