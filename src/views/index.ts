@@ -12,6 +12,7 @@ import ChatStudents from './chat/students/index.vue';
 import ChatCompanias from './chat/companias/index.vue';
 import Posts from './posts/index.vue';
 import Vacancy from './vacancy/index.vue';
+import ComponiList from './componi-list/index.vue';
 
 export {
   Login,
@@ -28,4 +29,5 @@ export {
   Profile,
   Posts,
   Vacancy,
+  ComponiList,
 }
