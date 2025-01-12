@@ -20,7 +20,7 @@
 
     <div class="componi-card--footer">
       <p class="componi-card--footer--title">{{ props?.data?.btnTitle }}</p>
-      <button class="componi-card--footer--btn">
+      <button class="componi-card--footer--btn" @click="router.push(`${props?.data?.url}`)">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
@@ -43,7 +43,10 @@
 
 <script setup lang="ts">
 import { defineProps } from "vue";
-import { useRoute } from "vue-router";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
 
 const props = defineProps({
   data: {
