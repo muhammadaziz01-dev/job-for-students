@@ -12,6 +12,7 @@ import DarkModToggle from './dark-mod-toggle/index.vue';
 import Lang from "./lang/index.vue";
 import Notification from "./notification/index.vue";
 import StatusCardDashbord from "./card/status-card.vue";
+import DashbordComponiCard from "./card/dashbord-componi-card.vue";
 
 export {
   Loader,
@@ -28,4 +29,5 @@ export {
   Lang,
   Notification,
   StatusCardDashbord,
+  DashbordComponiCard,
 }
