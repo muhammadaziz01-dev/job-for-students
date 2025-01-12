@@ -1,19 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import {
-  Error,
-  Chat,
-  ChatCompanias,
-  ChatStudents,
-  ChatId,
-  Login,
-  Dashbord,
-  Students,
-  Events,
-  Settings,
-  ProfileComplete,
-  Profile,
-  Posts,
-  Vacancy,
+  Error,Chat,ChatCompanias,ChatStudents,ChatId,Login,
+  Dashbord,Students,Events,Settings,ProfileComplete,
+  Profile,Posts,Vacancy,ComponiList,
 } from '../views'
 import { AdminLayout } from '../layout'
 const routes = [
@@ -36,6 +25,11 @@ const routes = [
         path: '',
         name: 'Dashbord',
         component: Dashbord,
+      },
+      {
+        path: '/dashbord/componi-list',
+        name: 'ComponiList',
+        component: ComponiList,
       },
       {
         path: '/chat',
