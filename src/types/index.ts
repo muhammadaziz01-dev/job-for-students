@@ -65,8 +65,8 @@ export interface IChatCompaniaData {
 interface IdataComponiCardDataData {
   id: number;
   name: string;
-  count:number;
-  increaseCount: number;
+  count ? :number;
+  increaseCount ? : number;
   icon: string;
 }
 export interface IdataComponiCardData {

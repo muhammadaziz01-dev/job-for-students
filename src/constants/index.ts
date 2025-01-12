@@ -1,4 +1,4 @@
-import { type IsidebarItems ,type IDashStatusCardData , type IChatCompaniaData} from '../types'
+import { type IsidebarItems ,type IDashStatusCardData , type IChatCompaniaData , type IdataComponiCardData} from '../types'
 import Avatar1 from '@/assets/icons/avatr1.svg'
 import Avatar2 from '@/assets/icons/avatr2.svg'
 import Avatar3 from '@/assets/icons/avatr3.svg'
@@ -325,7 +325,7 @@ export const dashStatusCardData:IDashStatusCardData[] = [
 ]
 
 // Dashboard componi card data
-export const dataComponiCardData = {
+export const dataComponiCardData : IdataComponiCardData = {
     title: "Ish beruvchilar (142)",
     btnTitle: "Barchasini ko’rish",
     url: "/dashbord/componi-list",
@@ -408,7 +408,7 @@ export const dataComponiCardData = {
     ],
   }
 
-  export const dataComponiCardData2 = {
+  export const dataComponiCardData2 :IdataComponiCardData = {
     title: "Jarayondagi korxonalar",
     btnTitle: "Chatga o’tish",
     url: "/chat/companias",
