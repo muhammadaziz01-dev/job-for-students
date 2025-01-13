@@ -7,7 +7,7 @@
       <StudentStatus :data="dataStudentStatus"/>
       <div class="student--wrapper--parent">
       <TabelFilter/>
-       <Table :data="students" />
+       <Table :dataBody="students" :dataHeader="studentHeder" :title="`students`" />
        <Paginaton />
       </div>
     </section>
@@ -88,6 +88,8 @@ const students:Istudents[] = reactive([
 
 
 ])
+
+const studentHeder:string[]=["Ism-Familiya", "Kurs", "Ish statusi", "Chat"]
 </script>
 
 <style scoped lang="scss" src="./style.scss">
