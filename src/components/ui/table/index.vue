@@ -19,7 +19,7 @@
       <tr v-if="title == `companias`" v-for="el  in dataBody" :key="el?.id" >
         <td>{{ el?.name }}</td>
         <td>{{ el?.announcementsCount }}</td>
-        <td style="max-width: 151px;">{{ el?.direction }}</td>
+        <td >{{ el?.direction }}</td>
         <td><button @click="router.push(`/chat/${title}/${el?.id}`)" class="chat-btn">Chat <img class="chat-icon" :src="ChatIcon" alt="icon"/></button></td>
       </tr>
     </tbody>
@@ -51,8 +51,6 @@ const props = defineProps({
 })
 
 const router = useRouter()
-
-console.log(props?.dataBody)
 </script>
 
 <style scoped lang="scss" src="./style.scss">
