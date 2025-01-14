@@ -94,5 +94,13 @@
         width: 100%;
         min-height: 100vh;
         background-color: #FFF;
+
+        .noChat-id-bg{
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://img.freepik.com/vecteurs-premium/messages-texte-notification-chat-du-telephone-portable-sms-conversation-numerique-telephone-portable-du-smartphone_101884-1867.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     }
 }

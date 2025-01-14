@@ -32,13 +32,23 @@
     </div>
 
     <div class="chat-parent--right">
-      <ChatId />
+      <div v-if="!chatId" class="noChat-id-bg"></div>
+      <ChatId v-else />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import {ref , watchEffect} from "vue";
+import {useRoute} from "vue-router";
 import ChatId from "./chat-id/index.vue";
+const chatId = ref()
+const route = useRoute();
+
+watchEffect(()=>{
+  chatId.value = route.params.id || "";
+  console.log(route.path);
+})
 </script>
 
 <style scoped lang="scss" src="./style.scss"></style>
