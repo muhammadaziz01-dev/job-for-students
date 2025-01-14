@@ -1,7 +1,7 @@
 <template>
   <section class="componi--wrapper">
     <div class="componi--wrapper--top">
-    <h1>Dashbord > Ish beruvchilar</h1>
+   <RoadNavigation/>
     <MinniHeader/>
     </div>
     <StudentStatus :data="dataComponiStatus"/>
@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 import { reactive } from 'vue'
-import {StudentStatus , Table , TabelFilter , Paginaton} from "@/components/ui";
+import {StudentStatus , Table , TabelFilter , Paginaton , RoadNavigation} from "@/components/ui";
 import MinniHeader from "@/components/header/min-header.vue";
 import {dataComponiStatus} from "@/constants"
 import {componiList , componiHeder} from "@/constants/tabel-data"

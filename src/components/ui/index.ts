@@ -13,6 +13,7 @@ import Lang from "./lang/index.vue";
 import Notification from "./notification/index.vue";
 import StatusCardDashbord from "./card/status-card.vue";
 import DashbordComponiCard from "./card/dashbord-componi-card.vue";
+import RoadNavigation from "./road-navigation/index.vue";
 
 export {
   Loader,
@@ -30,4 +31,5 @@ export {
   Notification,
   StatusCardDashbord,
   DashbordComponiCard,
+  RoadNavigation,
 }
