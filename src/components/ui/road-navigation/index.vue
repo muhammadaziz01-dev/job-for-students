@@ -1,11 +1,15 @@
 <template>
   <div class="road-navigation">
-    <span v-for="el in props?.data" :key="el?.id" :style="el?.color ? `color: ${el?.color};`: ``">{{ el?.name }} {{ el?.icon ? el?.icon+ " " : '' }}</span>
+    <span  v-for="el in props?.data" :key="el?.id" @click="router.push(`${el?.path}`)" :style="el?.color ? `color: ${el?.color};`: ``" >{{ el?.name }} {{ el?.icon ? el?.icon+ " " : '' }}</span>
   </div >
 </template>
 
 <script setup lang="ts">
 import { defineProps , type PropType } from "vue";
+import {useRouter} from 'vue-router';
+
+const router = useRouter();
+
 
 const props = defineProps({
   data: {
@@ -40,6 +44,7 @@ const props = defineProps({
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
+    cursor: pointer;
     margin:0;
   }
 }
