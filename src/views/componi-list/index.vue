@@ -6,7 +6,7 @@
     </div>
     <StudentStatus :data="dataComponiStatus"/>
     <div class="student--wrapper--parent">
-     <TabelFilter/>
+     <TabelFilter :data="componiFilter"/>
      <Table :dataBody="componiList" :dataHeader="componiHeder" :title="`companias`"/>
      <Paginaton />
     </div>
@@ -61,6 +61,11 @@ const componiList = reactive([
 ])
 
 const componiHeder :string[]=['Kompaniya nomi' , 'E’lonlar  soni' , 'Yo’nalish' , 'Chat']
+
+const componiFilter={
+  title:'Ish beruvchilar',
+  description: 'Aktiv kompaniyalar ro’yxati',
+}
 </script>
 
 <style scoped lang="scss" src="./style.scss">

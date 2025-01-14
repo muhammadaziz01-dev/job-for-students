@@ -6,7 +6,7 @@
       </div>
       <StudentStatus :data="dataStudentStatus"/>
       <div class="student--wrapper--parent">
-      <TabelFilter/>
+      <TabelFilter :data="studentFilter"/>
        <Table :dataBody="students" :dataHeader="studentHeder" :title="`students`" />
        <Paginaton />
       </div>
@@ -89,7 +89,12 @@ const students:Istudents[] = reactive([
 
 ])
 
-const studentHeder:string[]=["Ism-Familiya", "Kurs", "Ish statusi", "Chat"]
+const studentHeder:string[]=["Ism-Familiya", "Kurs", "Ish statusi", "Chat"];
+
+const studentFilter={
+  title:'Barcha talabalar',
+  description: 'Aktiv talabalar ro’yxati',
+}
 </script>
 
 <style scoped lang="scss" src="./style.scss">
