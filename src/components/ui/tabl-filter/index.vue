@@ -24,7 +24,6 @@ const props = defineProps({
   },
 })
 
-console.log(props.data)
 </script>
 
 <style scoped lang="scss" src="./stayle.scss">
