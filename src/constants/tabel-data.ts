@@ -72,4 +72,46 @@ export const studentHeder:string[]=["Ism-Familiya", "Kurs", "Ish statusi", "Chat
 
 
 // componi list table
+export const componiList = [
+  {
+    id: 1,
+    name: 'EPAM Uzbekistan',
+    announcementsCount: 12,
+    direction: "IT va dasturiy ta'minot",
+  },
+  {
+    id: 2,
+    name: 'UzAuto Motors',
+    announcementsCount: 15,
+    direction: "Avtomobilsozlik va ishlab chiqarish",
+  },
+  {
+    id: 3,
+    name: 'MyTaxi Uzbekistan',
+    announcementsCount: 14,
+    direction: "Transport va logistika",
+  },
+  {
+    id: 4,
+    name: 'UzCard',
+    announcementsCount: 9,
+    direction: "Moliya texnologiyalari (FinTech)",
+  },
+  {
+    id: 5,
+    name: 'Progress Solution Technologies',
+    announcementsCount: 7,
+    direction: "IT va dasturiy ta'minot",
+  },
+  {
+    id: 6,
+    name: 'Click Technologies',
+    announcementsCount: 18,
+    direction: "FinTech va elektron to‘lovlar",
+  },
+
+];
+
+export const componiHeder :string[]=['Kompaniya nomi' , 'E’lonlar  soni' , 'Yo’nalish' , 'Chat']
+
 
