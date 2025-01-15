@@ -10,7 +10,7 @@ import { chatStudentList } from "../../../constants";
       class="studentList-list--itim"
     >
       <div class="studentList-list--itim--avatar">
-        <img :src="el?.avatar" alt="" class="studentList-list--itim--avatar--img" />
+        <img :src="el?.avatar" alt="icon" class="studentList-list--itim--avatar--img" />
         <div class="studentList-list--itim--avatar--status" :style="el?.online ? `background: #27AE60` : `background: rgba(166, 176, 231, 1)`"></div>
       </div>
       <div class="studentList-list--itim--title">
