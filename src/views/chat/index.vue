@@ -47,8 +47,8 @@ const route = useRoute();
 
 watchEffect(()=>{
   chatId.value = route.params.id || "";
-  console.log(route.path);
 })
 </script>
 
 <style scoped lang="scss" src="./style.scss"></style>
+

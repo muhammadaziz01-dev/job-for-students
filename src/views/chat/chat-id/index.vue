@@ -1,22 +1,59 @@
+
+<script setup lang="ts">
+import { ref , watchEffect} from "vue";
+import {useRoute} from "vue-router";
+import {chatcompaniaList , chatStudentList} from "@/constants"
+
+const route = useRoute();
+
+const chatId = ref<string | string[]>("")
+const chatRol = ref<string | string[]>("")
+const chatList = ref<any[]>([]);
+const chatUser = ref<any>();
+
+
+watchEffect(() => {
+  chatId.value = route.params.id;
+  chatRol.value = route.path.split("/")[2];
+  chatList.value = chatRol.value === "companias" ? chatcompaniaList : chatStudentList;
+
+   if( chatList.value.length ){
+      chatUser.value = chatList.value.filter((el)=>el?.id == chatId.value)[0];
+   }
+
+});
+
+const toggleMenu = ref<boolean>(false);
+
+const isMenu = () => {
+  toggleMenu.value = !toggleMenu.value;
+};
+</script>
+
 <template>
   <div class="chatid-parent">
     <div class="chatid-parent--header">
       <div class="chatid-parent--header--card">
+
+
         <div class="chatid-parent--header--card--avatar">
           <img
             class="chatid-parent--header--card--avatar--img"
-            src="../../../assets/icons/avatr1.svg"
+            :src="chatUser?.avatar"
             alt="icon"
           />
           <div class="chatid-parent--header--card--avatar--title">
-            <h3>Valisher G’aniyev</h3>
-            <p>Online</p>
+            <h3>{{ chatUser?.name }}</h3>
+            <p v-if="chatUser?.online" style="color: #25C196;">Online</p>
+            <p v-else style="color: #84828A;">oxirgi faollik :  {{ chatUser?.lastActivity }}</p>
           </div>
         </div>
         <button class="chatid-parent--header--card--btn" @click="isMenu">
           <img src="../../../assets/icons/more.svg" alt="ison" />
         </button>
 
+
+        <!-- toggle menu start-->
         <div
           class="chatid-parent--header--card--menu"
           v-if="toggleMenu"
@@ -58,6 +95,8 @@
             <span>Chatni o’chirish</span>
           </button>
         </div>
+        <!-- toggle menu end-->
+
       </div>
     </div>
     <div class="chatid-parent--body">
@@ -118,14 +157,5 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { ref } from "vue";
-
-const toggleMenu = ref<boolean>(false);
-
-const isMenu = () => {
-  toggleMenu.value = !toggleMenu.value;
-};
-</script>
 
 <style scoped lang="scss" src="./style.scss"></style>
