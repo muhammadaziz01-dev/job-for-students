@@ -1,0 +1,22 @@
+.event--wrapper {
+    background-color: transparent;
+    padding: 50px 30px 30px 30px;
+    min-width: calc(100vw - 320px);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    &--top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            color: #444655;
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 20px;
+            margin: 0;  
+        }
+    }
+}
