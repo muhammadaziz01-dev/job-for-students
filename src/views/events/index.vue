@@ -39,8 +39,6 @@ const isRoote = ref();
 
 watchEffect(() => {
   isRoote.value = route.name;
-  console.log(isRoote.value);
-
 });
 </script>
 

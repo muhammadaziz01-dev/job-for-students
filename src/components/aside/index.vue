@@ -12,7 +12,7 @@
       </div>
       <div class="aside--top--list">
         <router-link
-          class="aside--top--list--item"
+          :class="AsideRoute == AsideName ? `aside--top--list--item activ-aside`: `aside--top--list--item`"
           v-for="(item, index) in sidebarItems"
           :to="item?.to"
           :key="index"
@@ -27,14 +27,26 @@
 </template>
 
 <script setup lang="ts">
-import { useRouter } from "vue-router";
+import {ref , watchEffect} from "vue";
+import { useRouter , useRoute } from "vue-router";
 import ProfiLogo from "../../assets/icons/profi-logo.svg";
 import StarIcon from "../../assets/icons/stars-icon.svg";
-import Logout from "../../assets/icons/logout-icon.svg";
 import { sidebarItems } from "../../constants";
 import LogoutModal from "@/components/modals/logout-modal.vue";
 
 const router = useRouter();
+const route = useRoute();
+
+const AsideRoute = ref();
+const AsideName = ref();
+
+watchEffect(() => {
+  AsideRoute.value = route.path.split("/")[1];
+  AsideName.value = route.name
+});
+
+
+
 
 const logout = (): void => {
   router.push("/");

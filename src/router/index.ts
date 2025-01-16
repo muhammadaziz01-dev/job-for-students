@@ -23,7 +23,7 @@ const routes = [
     children: [
       {
         path: '',
-        name: 'Dashbord',
+        name: 'dashbord',
         component: Dashbord,
       },
       {
@@ -33,7 +33,7 @@ const routes = [
       },
       {
         path: '/chat',
-        name: 'Chat',
+        name: 'chat',
         component: Chat,
         children: [
           {
@@ -64,12 +64,12 @@ const routes = [
       },
       {
         path: '/students',
-        name: 'Students',
+        name: 'students',
         component: Students,
       },
       {
         path: '/events',
-        name: 'Events',
+        name: 'events',
         component: Events,
         children:[
           {
@@ -100,12 +100,12 @@ const routes = [
       },
       {
         path: '/posts',
-        name: 'Posts',
+        name: 'posts',
         component: Posts,
       },
       {
         path: '/vacancy',
-        name: 'Vacancy',
+        name: 'vacancy',
         component: Vacancy,
       },
       {
