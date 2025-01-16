@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import {
   Error,Chat,ChatCompanias,ChatStudents,ChatId,Login,
   Dashbord,Students,Events,Settings,ProfileComplete,
-  Profile,Posts,Vacancy,ComponiList,
+  Profile,Posts,Vacancy,ComponiList,AllEvents, MyEvents , EventId,
 } from '../views'
 import { AdminLayout } from '../layout'
 const routes = [
@@ -71,6 +71,32 @@ const routes = [
         path: '/events',
         name: 'Events',
         component: Events,
+        children:[
+          {
+            path: '',
+            name: 'AllEvents',
+            component: AllEvents,
+            children:[
+              {
+                path: ':id',
+                name: 'EventId',
+                component: EventId,
+              }
+            ]
+          },
+          {
+            path:'my-events',
+            name: 'MyEvents',
+            component: MyEvents,
+            children:[
+              {
+                path: ':id',
+                name: 'EventId',
+                component: EventId,
+              }
+            ]
+          }
+        ]
       },
       {
         path: '/posts',

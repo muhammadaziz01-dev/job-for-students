@@ -51,6 +51,12 @@
                 }
             }
 
+            .flex{
+                display: flex;
+                align-items: center;
+                gap:10px;
+            }
+
             .router-link-exact-active{
                 color:#FFF;
                 background: #B79BFF; 
