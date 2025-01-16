@@ -2,6 +2,9 @@ import Login from './login/index.vue';
 import Dashbord from './dashbord/index.vue';
 import Error from './error/index.vue';
 import Events from './events/index.vue';
+import AllEvents from "./events/all-events/index.vue";
+import MyEvents from "./events/my-events/index.vue";
+import EventId from "./events/event-id/index.vue";
 import Settings from './proferans/index.vue';
 import Students from './students/index.vue';
 import Chat from './chat/index.vue';
@@ -19,6 +22,9 @@ export {
   Dashbord,
   Error,
   Events,
+  AllEvents,
+  MyEvents,
+  EventId,
   Settings,
   Students,
   Chat,
