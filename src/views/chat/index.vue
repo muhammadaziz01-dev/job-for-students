@@ -5,12 +5,12 @@
         <h1 class="chat-parent--left--menu--title">Xabarlar</h1>
         <div class="chat-parent--left--menu--router-wrapper">
           <router-link
-            class="chat-parent--left--menu--router-wrapper--link"
+            :class="isActive('/chat/students') ? `chat-parent--left--menu--router-wrapper--link is-active`: `chat-parent--left--menu--router-wrapper--link`"
             to="/chat/students"
             >Talabalar</router-link
           >
           <router-link
-            class="chat-parent--left--menu--router-wrapper--link"
+            :class="isActive('/chat/companias') ? `chat-parent--left--menu--router-wrapper--link is-active`: `chat-parent--left--menu--router-wrapper--link`"
             to="/chat/companias"
             >Kompaniyalar</router-link
           >
@@ -48,6 +48,9 @@ const route = useRoute();
 watchEffect(()=>{
   chatId.value = route.params.id || "";
 })
+
+const isActive = (path: string) =>  route.path === path || route.path.startsWith(path);
+
 </script>
 
 <style scoped lang="scss" src="./style.scss"></style>
