@@ -649,3 +649,42 @@ export const eventsData = [
     isEdit: false
   }
 ];
+
+export const myEventsData = [
+  {
+    id: 1,
+    day: '28',
+    month: 'Okt',
+    title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    time: '09:00 - 12:30',
+    location: 'Online',
+    isEdit: true
+  },
+  {
+    id: 2,
+    day: '29',
+    month: 'Okt',
+    title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    time: '10:00 - 11:30',
+    location: '"Yoshlar Ishlari Agentligi" binosi',
+    isEdit: true
+  },
+  {
+    id: 3,
+    day: '01',
+    month: 'Noy',
+    title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    time: '14:20 - 15:40',
+    location: '"Yoshlar Ijod Saroyi" binosi',
+    isEdit: true
+  },
+  {
+    id: 4,
+    day: '04',
+    month: 'Noy',
+    title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    time: '15:00 - 15:30',
+    location: 'Online',
+    isEdit: true
+  }
+];
