@@ -653,7 +653,7 @@ export const eventsData :IDataEventsCard[] = [
 export const myEventsData :IDataEventsCard[] = [
   {
     id: 1,
-    day: '28',
+    day: '19',
     month: 'Okt',
     title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     time: '09:00 - 12:30',
@@ -662,7 +662,7 @@ export const myEventsData :IDataEventsCard[] = [
   },
   {
     id: 2,
-    day: '29',
+    day: '31',
     month: 'Okt',
     title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     time: '10:00 - 11:30',
@@ -671,7 +671,7 @@ export const myEventsData :IDataEventsCard[] = [
   },
   {
     id: 3,
-    day: '01',
+    day: '07',
     month: 'Noy',
     title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     time: '14:20 - 15:40',
@@ -680,7 +680,7 @@ export const myEventsData :IDataEventsCard[] = [
   },
   {
     id: 4,
-    day: '04',
+    day: '14',
     month: 'Noy',
     title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     time: '15:00 - 15:30',
