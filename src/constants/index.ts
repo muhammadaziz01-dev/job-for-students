@@ -1,5 +1,5 @@
 import { type IsidebarItems ,type IDashStatusCardData , type IChatCompaniaData ,
-   type IdataComponiCardData , type IDataStudentStatus} from '../types'
+   type IdataComponiCardData , type IDataStudentStatus , type IDataEventsCard} from '../types'
 import Avatar1 from '@/assets/icons/avatr1.svg'
 import Avatar2 from '@/assets/icons/avatr2.svg'
 import Avatar3 from '@/assets/icons/avatr3.svg'
@@ -611,7 +611,7 @@ export const dataComponiStatus:IDataStudentStatus[] = [
 ];
 
 // data event list
-export const eventsData = [
+export const eventsData :IDataEventsCard[] = [
   {
     id: 1,
     day: '28',
@@ -650,7 +650,7 @@ export const eventsData = [
   }
 ];
 
-export const myEventsData = [
+export const myEventsData :IDataEventsCard[] = [
   {
     id: 1,
     day: '28',

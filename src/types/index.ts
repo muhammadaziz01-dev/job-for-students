@@ -83,3 +83,13 @@ export interface IDataStudentStatus {
   kaficent: number
   protses: boolean
 }
+
+export interface IDataEventsCard{
+  id: number,
+  day:string,
+  month: string,
+  title:string,
+  time:string,
+  location:string,
+  isEdit:boolean,
+}
