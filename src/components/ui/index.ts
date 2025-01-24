@@ -13,6 +13,7 @@ import Lang from "./lang/index.vue";
 import Notification from "./notification/index.vue";
 import StatusCardDashbord from "./card/status-card.vue";
 import DashbordComponiCard from "./card/dashbord-componi-card.vue";
+import EventCard from "./card/event-card.vue";
 import RoadNavigation from "./road-navigation/index.vue";
 
 export {
@@ -32,4 +33,5 @@ export {
   StatusCardDashbord,
   DashbordComponiCard,
   RoadNavigation,
+  EventCard, // add other components you want to export here...
 }
