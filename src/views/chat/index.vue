@@ -5,12 +5,12 @@
         <h1 class="chat-parent--left--menu--title">Xabarlar</h1>
         <div class="chat-parent--left--menu--router-wrapper">
           <router-link
-            :class="isActive('/chat/students') ? `chat-parent--left--menu--router-wrapper--link is-active`: `chat-parent--left--menu--router-wrapper--link`"
+            :class="isActive(route?.path ,'/chat/students') ? `chat-parent--left--menu--router-wrapper--link is-active`: `chat-parent--left--menu--router-wrapper--link`"
             to="/chat/students"
             >Talabalar</router-link
           >
           <router-link
-            :class="isActive('/chat/companias') ? `chat-parent--left--menu--router-wrapper--link is-active`: `chat-parent--left--menu--router-wrapper--link`"
+            :class="isActive(route?.path , '/chat/companias') ? `chat-parent--left--menu--router-wrapper--link is-active`: `chat-parent--left--menu--router-wrapper--link`"
             to="/chat/companias"
             >Kompaniyalar</router-link
           >
@@ -41,6 +41,7 @@
 <script setup lang="ts">
 import {ref , watchEffect} from "vue";
 import {useRoute} from "vue-router";
+import {isActive} from "@/utils"
 import ChatId from "./chat-id/index.vue";
 const chatId = ref()
 const route = useRoute();
@@ -49,7 +50,6 @@ watchEffect(()=>{
   chatId.value = route.params.id || "";
 })
 
-const isActive = (path: string) =>  route.path === path || route.path.startsWith(path);
 
 </script>
 
