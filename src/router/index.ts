@@ -3,6 +3,7 @@ import {
   Error,Chat,ChatCompanias,ChatStudents,ChatId,Login,
   Dashbord,Students,Events,Settings,ProfileComplete,
   Profile,Posts,Vacancy,ComponiList,AllEvents, MyEvents , EventId,
+  AllPosts , MyPosts, StudentPosts, ComponiPosts
 } from '../views'
 import { AdminLayout } from '../layout'
 const routes = [
@@ -102,6 +103,28 @@ const routes = [
         path: '/posts',
         name: 'posts',
         component: Posts,
+        children:[
+          {
+            path: '',
+            name: 'AllPosts',
+            component: AllPosts,
+          },
+          {
+            path:'my-posts',
+            name: 'MyPosts',
+            component: MyPosts,
+          },
+          {
+            path:'student-posts',
+            name: 'StudentPosts',
+            component: StudentPosts,
+          },
+          {
+            path:'componi-posts',
+            name: 'ComponiPosts',
+            component: ComponiPosts,
+          }
+        ]
       },
       {
         path: '/vacancy',
